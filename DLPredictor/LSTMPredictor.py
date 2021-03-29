@@ -3,7 +3,6 @@ import numpy as np
 import datetime, time
 import tensorflow as tf
 import csv
-import os.path
 
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM
@@ -207,10 +206,10 @@ def read_csv(filepath):
 # Hyperparameters, filepath and amount of data to load
 #
 
-FILEPATH = 'Data/BPI_Challenge_2012'
+FILEPATH = 'Data/BPI_Challenge_2012.csv'
 NEURONS_PER_LAYER = 100
 EPOCHS = 60
-DATA_ROWS = 10000
+DATA_ROWS = 5000
 
 
 old_time = time.time()
